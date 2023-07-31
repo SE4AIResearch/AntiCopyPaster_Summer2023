@@ -78,7 +78,9 @@
 .team_member:nth-child(even) .socialIcons-list .icon {
   color: black;
 }
-
+.team_member:nth-child(even) .socialIcons-list .icon:hover {
+	color: #6c757d;
+  }
 @media (max-width: 800px){
 	.team_member{
 		flex-direction: column;
