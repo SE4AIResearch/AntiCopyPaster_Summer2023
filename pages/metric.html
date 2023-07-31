@@ -24,7 +24,7 @@
 
   <div class="body_text" style="display: flex; flex-direction: column; justify-content: center; text-align: left; margin-left: 15%; margin-right: 15%">
     
-    <h2 style="margin-top: 25px; align-self: center">Metric Clustering & Advanced Settings</h2>
+    <h2 style="margin-top: 25px; align-self: center">Metric Composition & Advanced Settings</h2>
     <p style="margin-bottom: 40px">In the advanced settings dialog of the configuration menu of AntiCopyPaster, you can customize the makeup of each of the four major metrics by which the plugin evaluates whether to extract a copied segment of code.</p>
     <img src="../assets/Advanced_Settings_Panel.png" style="width: 50%; height: auto; margin-top: 0px; align-self: center;">
     <h3 style="margin-top: 30px">Customizing Metrics</h3>
@@ -47,10 +47,27 @@
             <li>For example, the Keywords Metric is composed of 62 submetrics. There are 31 keywords it can count towards the metric, and each keyword can be counted either in total or on a per-line basis.</li>
             <li>In the advanced settings dialog, this is extracted into a total / per-line dimension, which has on/off and required/unrequired toggles for each measurement type, and a specific keyword dimension, which allows each keyword to be counted or disregarded individually.</li>
         </ul>
+    
+    <div id="view_sheet_button" style="align-self: center;">
+    <button id="view_sheet_button" onclick="show_sheet()" style="margin-top: 45px; margin-bottom: 45px;">View full metric composition description sheet</button>
+    </div>
+    <div id="metric_sheet" style="align-self: center;">
+
+    </div>
 
 </div>
 
 <script>
+   function show_sheet() {
+        document.getElementById("view_sheet_button").innerHTML = "";
+        document.getElementById("metric_sheet").innerHTML = `
+        
+        <object data="https://drive.google.com/file/d/1184vP60BPrkXVPWQnPHDcjrJGOnNzPl_/view?usp=sharing" type="application/pdf" width="100%" height="500px">
+        <p>Unable to display PDF file. <a href="https://drive.google.com/file/d/1184vP60BPrkXVPWQnPHDcjrJGOnNzPl_/view?usp=sharing">Open view page</a> instead.</p>
+        </object>
+        
+        `;
+        }
 </script>
 
 </body>

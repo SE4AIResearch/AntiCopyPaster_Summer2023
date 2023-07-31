@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="The site for Summer 2023 Research on extending the functionality of the AntiCopyPaster tool for IntelliJ." />
+  <meta charset="utf-8">
+  <title class = "header">AntiCopyPaster - Summer 2023</title>
+  <link rel="icon" type="image/x-icon" href="..\assets\IntelliJ_IDEA_Icon.svg.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="AlOmar">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+  
+  <div class="topnav">
+    <a href="../index.html">Home</a>
+    <a href="./resources.html">Resources</a>
+    <a href="./documentation.html">Documentation</a>
+    <a href="./time_tracking.html">Time Tracking</a>
+    <a href="./about.html">About</a>
+  </div>
+
+  <div class="body_text" style="display: flex; flex-direction: column; justify-content: center; text-align: left; margin-left: 15%; margin-right: 15%">
+    
+    <h2 style="margin-top: 25px; align-self: center">Statistics Collection & Credential Settings</h2>
+    <p style="margin-bottom: 40px">By entering sufficient credentials, and upon startup of the IntelliJ IDE, AntiCopyPaster will automatically retrieve and save certain user statistics to a remote database.</p>
+    <img src="../assets/Credentials_Dialog.png" style="width: 50%; height: auto; margin-top: 0px; align-self: center;">
+    <h3 style="margin-top: 30px">Privacy</h3>
+        <ul>
+            <li>No personal information is included in the saved data.</li>
+            <li>Each project's statistics are identified only by a randomly generated project ID that is saved locally. (No saved information links a user to any project.)</li>
+        </ul>
+    <h3>What statistics are saved?</h3>
+        <p>For each project, the statistics saved are the number of:</p>
+        <ul>
+            <li>copy events</li>
+            <li>paste events</li>
+            <li>notification triggers</li>
+            <li>accepted refactorings</li>
+            <li>rejected refactorings</li>
+        </ul>
+    <h3>Why is this data being collected?</h3>
+        <p>This data allows for AntiCopyPaster's developers to evaluate how the plugin is being used and to make it more useful and user-friendly in the future.</p>
+
+</div>
+
+<script>
+</script>
+
+</body>
+</html>
